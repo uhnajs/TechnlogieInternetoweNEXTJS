@@ -1,9 +1,13 @@
-import Layout from '../src/app/Layout'
-export default function Home() {
+// pages/pricing.tsx
+import Layout from '../src/app/layout';
+
+const Pricing = () => {
     return (
         <Layout>
-            <h1 className="text-4xl font-bold">Witaj na stronie głównej</h1>
-            <p className="mt-3 text-base">Tutaj umieść treść wypełnioną lorem ipsum...</p>
+            <h1 className="text-4xl font-bold text-center my-10">Pricing Plans</h1>
+            {/* Szczegółowe informacje o cenniku */}
         </Layout>
-    )
-}
+    );
+};
+
+export default Pricing;

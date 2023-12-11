@@ -1,10 +1,13 @@
-import Layout from '../src/app/Layout'
+// pages/about.tsx
+import Layout from '../src/app/layout';
 
-export default function Home() {
+const About = () => {
     return (
         <Layout>
-            <h1 className="text-4xl md:text-5xl font-bold">Witaj na stronie głównej</h1>
-            <p className="mt-3 text-base">Tutaj umieść treść wypełnioną lorem ipsum...</p>
+            <h1>About Us</h1>
+            {/* Reszta treści strony */}
         </Layout>
-    )
-}
+    );
+};
+
+export default About;

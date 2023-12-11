@@ -1,10 +1,13 @@
-import Layout from '../src/app/Layout'
+// pages/services.tsx
+import Layout from '../src/app/layout';
 
-export default function Home() {
+const Services = () => {
     return (
         <Layout>
-            <h1 className="text-4xl font-bold">Witaj na stronie głównej</h1>
-            <p className="mt-3 text-base">Tutaj umieść treść wypełnioną lorem ipsum...</p>
+            <h1 className="text-4xl font-bold text-center my-10">Our Services</h1>
+            {/* Treść dotycząca usług */}
         </Layout>
-    )
-}
+    );
+};
+
+export default Services;

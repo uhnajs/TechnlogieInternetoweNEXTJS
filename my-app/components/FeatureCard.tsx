@@ -1,13 +1,12 @@
-// components/HeroSection.tsx
-
-const HeroSection = () => {
+// components/FeatureCard.tsx
+const FeatureCard = ({ title, description, imageSrc }) => {
     return (
-        <div className="text-center p-12 text-white" style={{ backgroundImage: 'url(/images/hero-background.jpg)' }}>
-            <h1 className="text-5xl font-bold">We're Streaming</h1>
-            <p className="text-xl mt-4 mb-8">Odkrywaj niesamowite światy i epickie przygody</p>
-            {/* Dodaj więcej treści lub przyciski */}
+        <div className="bg-white rounded-lg shadow-lg p-5 text-center">
+            <img src={imageSrc} alt={title} className="rounded-lg mb-4" />
+            <h3 className="text-2xl font-bold mb-3">{title}</h3>
+            <p>{description}</p>
         </div>
     );
 };
 
-export default HeroSection;
+export default FeatureCard;

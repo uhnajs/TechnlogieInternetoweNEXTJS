@@ -1,8 +1,14 @@
 // pages/_app.tsx
-import '../src/app/globals.css'
+import '../styles/globals.css' // Załóżmy, że ścieżka do globals.css jest poprawna
+
 
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    // Opakowanie każdej strony w komponent Layout
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    );
 }
 
-export default MyApp
+export default MyApp;
